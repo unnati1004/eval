@@ -1,0 +1,16 @@
+{
+  "City": [
+    {
+      "city": "rhyhtr",
+      "population": "242345",
+      "country": "india",
+      "id": 1
+    },
+    {
+      "city": "ukrain",
+      "population": "230900",
+      "country": "europe",
+      "id": 2
+    }
+  ]
+}
