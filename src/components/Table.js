@@ -11,14 +11,14 @@ export const Table = () => {
   const dispatch = useDispatch()
   useEffect(() => {
     getdata()
-  }
-}, [handle]);
+   }, [handle]);
 
 const getdata =()=>{
   axios.get(`http://localhost:3001/City`).then((res) => {
     let final = dispatch(addCity)
     setHandle([...final.payload]);
   });
+}
   const handleDel = (id) => {
     axios.delete(`http://localhost:3001/City/${id}`).then(() => {
       getdata()
